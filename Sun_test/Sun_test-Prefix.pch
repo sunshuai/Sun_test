@@ -11,4 +11,21 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+    #import "UtilityConfig.h"
+    #import "SunConfig.h"
+    #import "Sun_Config.h"
+    #import "DataInterface.h"
+    #import "SunSourceLogin.h"
+    
 #endif
+
+// 版本号
+#ifndef IOS_VERSION
+#define IOS_VERSION  [[[UIDevice currentDevice] systemVersion] floatValue]
+#endif 
+#ifndef IS_RECEIVE_PUSH
+#define IS_RECEIVE_PUSH  @"IS_RECEIVE_PUSH"
+#endif
+
+// 获取全局变量
+#define KGlobalValue [GlobalValue globalValue]
